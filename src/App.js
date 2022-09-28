@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+
+const App = () => {
+
+  const offers = [
+    {
+      id: 1,
+      title: 'move-in & deep cleaning',
+    }
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="offers-section">
+      {offers.map((title) => (
+        <div className="offer-section">
+        <div className="offer-details-section">
+          <h2>{title}</h2>
+          <p>Book now</p>
+        </div>
+      </div>
+      ))}
+
     </div>
   );
 }
