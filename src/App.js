@@ -1,4 +1,6 @@
 import './offers.styles.scss'
+import OfferItem from './components/offer-item/offer-item.component';
+
 
 const App = () => {
 
@@ -31,16 +33,8 @@ const App = () => {
   ]
   return (
     <div className="offers-section">
-      {offers.map(({title, id, imageUrl}) => (
-        <div key={id} className="offer-section">
-        <div className="background-image" style={{
-          backgroundImage: `url(${imageUrl})`
-        }} />
-        <div className="offer-details-section">
-          <h2>{title}</h2>
-          <p>Book now</p>
-        </div>
-      </div>
+      {offers.map((offer) => (
+        <OfferItem key={offer.id} offer={offer} />
       ))}
 
     </div>
