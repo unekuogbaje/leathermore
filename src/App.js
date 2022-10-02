@@ -1,5 +1,3 @@
-import './offers.styles.scss'
-
 import Chron from './components/chron/chron.component';
 
 const App = () => {
