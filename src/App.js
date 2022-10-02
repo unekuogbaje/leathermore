@@ -1,6 +1,6 @@
 import './offers.styles.scss'
-import OfferItem from './components/offer-item/offer-item.component';
 
+import Chron from './components/chron/chron.component';
 
 const App = () => {
 
@@ -32,12 +32,7 @@ const App = () => {
     },
   ]
   return (
-    <div className="offers-section">
-      {offers.map((offer) => (
-        <OfferItem key={offer.id} offer={offer} />
-      ))}
-
-    </div>
+    <Chron offers={offers} />
   );
 }
 
