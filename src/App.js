@@ -3,6 +3,7 @@ import Home from './routes/home/home.component';
 import { Routes, Route } from 'react-router-dom'
 
 import NavBar from './routes/navbar/navbar.component';
+import SignIn from './routes/sign-in/sign-in.component';
 
 
 
@@ -16,6 +17,7 @@ const App = () => {
       <Route path='/' element={<NavBar />} >
         <Route index element={<Home/> } />
         <Route path='booking' element={<Booking/> } />
+        <Route path='sign-in' element={<SignIn/> } />
       </Route>
     </Routes>
     );
