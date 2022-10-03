@@ -1,5 +1,7 @@
 import Chron from '../../components/chron/chron.component';
 
+import { Outlet } from 'react-router-dom';
+
 const Home = () => {
 
   const offers = [
