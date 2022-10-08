@@ -3,8 +3,9 @@ import {
     getAuth,
     signInWithPopup,
     signInWithRedirect,
-    GoogleAuthProvider }
-    from 'firebase/auth';
+    GoogleAuthProvider
+  } from 'firebase/auth';
+
 const firebaseConfig = {
     apiKey: "AIzaSyCNR7g5RV56Lp1IqueVciCfSym9ssYO-FQ",
     authDomain: "so-clean-cd12b.firebaseapp.com",
@@ -19,8 +20,8 @@ const firebaseConfig = {
 
   const provider = new GoogleAuthProvider();
 
-  provider.selectCustomParameter({
-    prompt: "select_account"
+  provider.setCustomParameters({
+    prompt: "select_account",
   });
 
   export const auth = getAuth();
