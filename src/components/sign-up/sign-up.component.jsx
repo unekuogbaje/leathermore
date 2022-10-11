@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createAuthUserWithEmailAndPassword } from "../../utils/firebase/firebase.utils";
+import { creteAuthUserWithEmailAndPassword } from "../../utils/firebase/firebase.utils";
 
 const defaultFormFields = {
     displayName: '',
@@ -16,7 +16,19 @@ const SignUp = () => {
 
     const handleSubmit = async (event) => {
         event.preventdefault();
-    }
+
+        if(password !== confirmPassword) {
+            alert("passwords do not match");
+            return;
+        }
+
+        try {
+            const response = await creteAuthUserWithEmailAndPassword(email, password);
+            console.log(response)
+        } catch(error) {
+            console.log('ecountered an error during user creation', error);
+        }
+    };
 
     const handleChange = (event) => {
         const {name, value } = event.target;
