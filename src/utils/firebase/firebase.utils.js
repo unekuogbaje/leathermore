@@ -4,7 +4,8 @@ import {
     signInWithPopup,
     signInWithRedirect,
     GoogleAuthProvider,
-    FacebookAuthProvider
+    FacebookAuthProvider,
+    createUserWithEmailAndPassword
   } from 'firebase/auth';
 
   import {
@@ -42,6 +43,8 @@ const firebaseConfig = {
   export const db = getFirestore();
 
  export const createUserDocumentFromAuth = async (userAuth) => {
+  if (!userAuth) return;
+  
     const userDocRef = doc(db, 'users', userAuth.uid );
 
     console.log(userDocRef);
@@ -73,3 +76,10 @@ const firebaseConfig = {
 
     return userDocRef;
   };
+
+  export const creteAuthUserWithEmailAndPassword = async (email, password) => {
+
+    if (!email || !password) return;
+
+    return await createUserWithEmailAndPassword(auth, email, password)
+  }
