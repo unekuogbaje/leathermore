@@ -42,17 +42,15 @@ const firebaseConfig = {
 
   export const db = getFirestore();
 
- export const createUserDocumentFromAuth = async (userAuth) => {
+ export const createUserDocumentFromAuth = async (
+  userAuth, 
+  additionalInformation = {}
+  ) => {
   if (!userAuth) return;
-  
+
     const userDocRef = doc(db, 'users', userAuth.uid );
 
-    console.log(userDocRef);
-
     const userSnapshot = await getDoc(userDocRef);
-    console.log(userSnapshot);
-    console.log(userSnapshot.exists());
-
     // user data does not exist
     // create / set the documen with the data from userAuth in my collection
 
@@ -64,7 +62,8 @@ const firebaseConfig = {
         await setDoc(userDocRef, {
           displayName,
           email,
-          createdAt
+          createdAt,
+          ...additionalInformation,
         });
       } catch (error) {
         console.log('error creating user', error.message);
@@ -77,7 +76,7 @@ const firebaseConfig = {
     return userDocRef;
   };
 
-  export const creteAuthUserWithEmailAndPassword = async (email, password) => {
+  export const createAuthUserWithEmailAndPassword = async (email, password) => {
 
     if (!email || !password) return;
 
