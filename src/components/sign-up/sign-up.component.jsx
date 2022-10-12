@@ -47,6 +47,7 @@ const SignUp = () => {
 
         setFormFields({...formFields, [name]: value})
     };
+    
     return (
         <div>
             <h1>Sign up with your email & password</h1>
