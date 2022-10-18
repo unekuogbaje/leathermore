@@ -3,12 +3,12 @@ import Home from './routes/home/home.component';
 import { Routes, Route } from 'react-router-dom'
 
 import NavBar from './routes/navbar/navbar.component';
-import SignIn from './routes/sign-in/sign-in.component';
+import Authentication from './routes/authentication/authentication.component';
 
 
 
-const Booking = () => {
-  return <h1>I am the booking page</h1>;
+const Shop = () => {
+  return <h1>I am the shop page</h1>;
 };
 
 const App = () => {
@@ -16,8 +16,8 @@ const App = () => {
     <Routes>
       <Route path='/' element={<NavBar />} >
         <Route index element={<Home/> } />
-        <Route path='booking' element={<Booking/> } />
-        <Route path='sign-in' element={<SignIn/> } />
+        <Route path='shop' element={<Shop/> } />
+        <Route path='auth' element={<Authentication/> } />
       </Route>
     </Routes>
     );

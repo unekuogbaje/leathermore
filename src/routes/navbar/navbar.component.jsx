@@ -11,10 +11,10 @@ const NavBar = () => {
             <CrwnLogo className='logo'/>
         </Link>
           <div className='nav-links-container'>
-            <Link className='nav-link' to='/booking'>
-                Creat a booking
+            <Link className='nav-link' to='/shop'>
+                Start shopping
             </Link>
-            <Link className='nav-link' to='/sign-in'>
+            <Link className='nav-link' to='/auth'>
                 SIGN IN
             </Link>
           </div>
