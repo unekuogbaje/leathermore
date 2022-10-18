@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 import FormInput from '../form-input/form-input.component';
-import Button from "../button/button";
+import Button from "../button/button.component";
 import {
     createAuthUserWithEmailAndPassword,
     createUserDocumentFromAuth
@@ -14,17 +14,19 @@ const defaultFormFields = {
     email: '',
     password: '',
     confirmPassword: '',
-}
+};
 
 const SignUp = () => {
     const [formFields, setFormFields] = useState(defaultFormFields);
     const { displayName, email, password, confirmPassword } = formFields;
+    // const { setCurrentUser } = useContext(UserContext);
 
     console.log(formFields);
 
     const resetFormFields = () => {
         setFormFields(defaultFormFields);
-    }
+    };
+
     const handleSubmit = async (event) => {
         event.preventDefault();
 
@@ -41,6 +43,7 @@ const SignUp = () => {
                 
                 await createUserDocumentFromAuth(user, { displayName });
                 resetFormFields();
+                // setCurrentUser(user);
         } catch (error) {
             if(error.code === 'auth/email-already-in-use') {
                 alert('Failed! Email already in use.', error);
@@ -53,7 +56,7 @@ const SignUp = () => {
     const handleChange = (event) => {
         const { name, value } = event.target;
 
-        setFormFields({...formFields, [name]: value})
+        setFormFields({...formFields, [name]: value});
     };
 
     return (
@@ -96,7 +99,9 @@ const SignUp = () => {
                 name="confirmPassword"
                 value={confirmPassword}
                 />
-                <Button type='submit'>Sign Up</Button>
+                <Button type='submit'> 
+                Sign Up
+                </Button>
             </form>
         </div>
     );
