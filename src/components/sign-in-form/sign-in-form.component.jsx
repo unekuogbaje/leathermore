@@ -16,10 +16,7 @@ const defaultFormFields = {
 
 const SignInForm = () => {
     const [formFields, setFormFields] = useState(defaultFormFields);
-    const { displayName, email, password, confirmPassword } = formFields;
-    // const { setCurrentUser } = useContext(UserContext);
-
-    console.log(formFields);
+    const { email, password } = formFields;
 
     const resetFormFields = () => {
         setFormFields(defaultFormFields);
@@ -28,27 +25,9 @@ const SignInForm = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        if(password !== confirmPassword) {
-            alert("passwords do not match");
-            return;
-        }
-
         try {
-            const { user } = await createAuthUserWithEmailAndPassword(
-                email, 
-                password
-                );
-                
-                await createUserDocumentFromAuth(user, { displayName });
-                resetFormFields();
-                // setCurrentUser(user);
-        } catch (error) {
-            if(error.code === 'auth/email-already-in-use') {
-                alert('Failed! Email already in use.', error);
-            } else {
-                console.log('ecountered an error during user creation', error);
-            }
-        }
+            resetFormFields();
+        } catch (error) {}
     };
 
     const handleChange = (event) => {
@@ -59,18 +38,9 @@ const SignInForm = () => {
 
     return (
         <div className="sign-up-container">
-            <h2>Create account?</h2>
-            <span>Sign up with your email & password</span>
+            <h2>Already have an account account?</h2>
+            <span>Sign in with your email & password</span>
             <form onSubmit={handleSubmit}>
-                <FormInput
-                label="Display Name"
-                type='text'
-                required
-                onChange={handleChange}
-                name="displayName"
-                value={displayName}
-                />
-
                 <FormInput
                 label="Email"
                 type='email'
@@ -89,16 +59,8 @@ const SignInForm = () => {
                 value={password}
                 />
 
-                <FormInput
-                label="Confirm Password"
-                type='password'
-                required
-                onChange={handleChange}
-                name="confirmPassword"
-                value={confirmPassword}
-                />
                 <Button type='submit'> 
-                Sign Up
+                Sign In
                 </Button>
             </form>
         </div>
