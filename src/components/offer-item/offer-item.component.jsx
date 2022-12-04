@@ -5,14 +5,14 @@ const OfferItem = ({ offer }) => {
     return (
         <div className="offer-section">
          <div className="background-image" style={{
-          backgroundImage: `url(${imageUrl})`
+          backgroundImage: `url(${imageUrl})`,
         }} />
          <div className="offer-details-section">
           <h2>{title}</h2>
-          <p>Book now</p>
+          <p>Order now</p>
         </div>
       </div>
-    )
-}
+    );
+};
 
 export default OfferItem
