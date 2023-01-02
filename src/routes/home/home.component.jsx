@@ -32,7 +32,11 @@ const Home = () => {
     },
   ]
   return (
-    <Chron offers={offers} />
+    <div>
+      <Chron offers={offers} />
+      <Outlet />
+    </div>
+    
   );
 }
 

@@ -22,6 +22,7 @@ const NavBar = () => {
         <Link className='logo-container' to='/'>
             <CrwnLogo className='logo'/>
         </Link>
+        
           <div className='nav-links-container'>
             <Link className='nav-link' to='/shop'>
                 Start shopping
