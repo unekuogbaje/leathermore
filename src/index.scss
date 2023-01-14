@@ -15,9 +15,14 @@ code {
 
 a {
   text-decoration: none;
-  color: black;
+  font-weight: bold;
+  color: #fbfcff;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  background-color: #e3e7f5 ;
 }

@@ -3,5 +3,63 @@
     width: 900px;
     justify-content: space-between;
     margin: 30px auto;
+    min-height: 100vh;
+
+    .screen_background {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      -webkit-background-clip: inset(0 0 0 0);
+      background-clip: inset(0 0 0 0);
+  }
+
+  .screen_background_shape {
+      transform: rotate(45deg);
+      position: absolute;
+  }
+
+  .screen_background_shape1 {
+    height: 520px;
+    width: 520px;
+    background:#003dcbc0;	
+    top: -50px;
+    left: -150%;
+    border-radius: 12px 72px 32px 100%;
+    opacity: 0.1;
+  }
+
+  .screen_background_shape2 {
+    height: 520px;
+    width: 420px;
+    background: #093bd177;	
+    top: -400px;
+    left: -400px;	
+    border-radius: 100%;
+    opacity: 0.1;
+      
+  }
+
+  .screen_background_shape3 {
+    height: 540px;
+    width: 100px;
+    background: linear-gradient(270deg,#093bd1c5, #003dcb9f);
+    top: -24px;
+    right: 0;	
+    border-radius: 100%;
+    opacity: 0.1;
+  }
+
+  .screen_background_shape4 {
+    height: 400px;
+    width: 200px;
+    background: #031882c2;	
+    top: 200px;
+    right: -400px;	
+    border-radius: 60px 100%;
+    opacity: 0.1;
+  }
   }
   

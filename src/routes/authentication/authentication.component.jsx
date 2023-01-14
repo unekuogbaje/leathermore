@@ -8,6 +8,13 @@ const Authentication = () => {
         <div className='authentication-container'>
             <SignInForm />
             <SignUp />
+
+            <div className="screen_background">
+                    <span className="screen_background_shape screen_background_shape4"></span>
+                    <span className="screen_background_shape screen_background_shape3"></span>
+                    <span className="screen_background_shape screen_background_shape2"></span>
+                    <span className="screen_background_shape screen_background_shape1"></span>
+                </div>
         </div>
     );
 };

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    background-color: #003ECB;
   
     .logo-container {
       height: 100%;
@@ -21,6 +22,8 @@
       .nav-link {
         padding: 10px 15px;
         cursor: pointer;
+        font-size: large;
+        text-decoration-color: whitesmoke;
       }
     }
   }

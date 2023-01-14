@@ -1,12 +1,12 @@
 .button-container {
-    min-width: 165px;
+    min-width: 120px;
     width: auto;
     height: 50px;
     letter-spacing: 0.5px;
     line-height: 50px;
-    padding: 0 35px 0 35px;
+    padding: 0 10px 0 10px;
     font-size: 15px;
-    background-color: black;
+    background-color: #003ECB;
     color: white;
     text-transform: uppercase;
     font-family: 'Barlow Condensed';
@@ -15,30 +15,33 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
+    box-shadow: 0px 0px 24px #5C5696;
+    border-radius: 12px;
   
     &:hover {
       background-color: white;
-      color: black;
-      border: 1px solid black;
+      color: #003ECB;
+      border: 1px solid #003ECB;
     }
   
     &.google-sign-in {
-      background-color: #4285f4;
+      background-color: #003ECB;
       color: white;
   
       &:hover {
-        background-color: #357ae8;
-        border: none;
+        background-color: white;
+        color: #003ECB;
+        border: 1px solid #003ECB;
       }
     }
   
     &.inverted {
       background-color: white;
-      color: black;
-      border: 1px solid black;
+      color: #003ECB;
+      border: 1px solid #003ECB;
   
       &:hover {
-        background-color: black;
+        background-color: #003ECB;
         color: white;
         border: none;
       }

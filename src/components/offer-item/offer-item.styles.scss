@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: aliceblue;
+    
   }
   
   .offer-section {
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid #033a88;
     margin: 0 7.5px 15px;
     overflow: hidden;
   
@@ -56,21 +56,24 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      border: 1px solid black;
+      border: 1px solid #003ECB;
       background-color: white;
       opacity: 0.7;
       position: absolute;
+      
   
       h2 {
         font-weight: bold;
         margin: 0 6px 0;
         font-size: 22px;
-        color: #4a4a4a;
+        color: #003ECB;
       }
   
       p {
         font-weight: lighter;
         font-size: 16px;
+        color: #002e98;
+        font-size: 17px;
       }
     }
   }

@@ -7,28 +7,28 @@ const Home = () => {
   const offers = [
     {
       id: 1,
-      title: "Move-in or deep cleaning",
-      imageUrl: "https://thumbs.dreamstime.com/b/janitor-cleaning-carpet-s-hand-vacuum-cleaner-126282708.jpg",
+      title: "Lights and Chandlier",
+      imageUrl: "https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
     },
     {
       id: 2,
-      title: "Regular home cleaning",
-      imageUrl: "https://imgb.srgcdn.com/8jeyrAnPyW8tv6FN4XaF.jpg",
+      title: "Chairs, Couches & Sofas",
+      imageUrl: "https://images.unsplash.com/photo-1565330502541-4937be8552e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
     },
     {
       id: 3,
-      title: "Funiture/upholestery",
-      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf4rYYWeRPW9yHmkLCRMA-0kOSsvWcaI6nPA&usqp=CAU",
+      title: "Shelves & Tables",
+      imageUrl: "https://images.unsplash.com/photo-1560184897-6cdec21b9962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     },
     {
       id: 4,
-      title: "Laundry",
-      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwEnSeUR23uRlNmjpN94atkJHO5ZoQntsZUGUUjowKI6Ot9mte-i2mB9GKIgsPrG6iEA4&usqp=CAU",
+      title: "Beds & Mattresses",
+      imageUrl: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
     },
     {
       id: 5,
-      title: "Fumigation",
-      imageUrl: "https://cleaneat.ng/wp-content/uploads/2017/10/pest-terminator-lagos.jpg",
+      title: "Plants & others",
+      imageUrl: "https://images.unsplash.com/photo-1569350080887-dd38c27caad0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
     },
   ]
   return (

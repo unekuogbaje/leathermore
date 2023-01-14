@@ -48,7 +48,7 @@ const SignUp = () => {
             if(error.code === 'auth/email-already-in-use') {
                 alert('Failed! Email already in use.', error);
             } else {
-                console.log('ecountered an error during user creation', error);
+                console.log('error creating user', error);
             }
         }
     };
@@ -62,7 +62,7 @@ const SignUp = () => {
     return (
         <div className="sign-up-container">
             <h2>Create account?</h2>
-            <span>Sign up with your email & password</span>
+            <span>Sign up here</span>
             <form onSubmit={handleSubmit}>
                 <FormInput
                 label="Display Name"
