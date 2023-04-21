@@ -1,10 +1,10 @@
-import Chron from '../../components/chron/chron.component';
+import Directory from '../../components/directory/directory';
 
 import { Outlet } from 'react-router-dom';
 
 const Home = () => {
 
-  const offers = [
+  const categories = [
     {
       id: 1,
       title: "Lights and Chandlier",
@@ -33,7 +33,7 @@ const Home = () => {
   ]
   return (
     <div>
-      <Chron offers={offers} />
+      <Directory categories={categories} />
       <Outlet />
     </div>
     

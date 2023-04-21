@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-    background-color: #003ECB;
+    background-color: whitesmoke;
   
     .logo-container {
       height: 100%;
@@ -23,12 +23,13 @@
         padding: 10px 15px;
         cursor: pointer;
         font-size: large;
-        text-decoration-color: whitesmoke;
+        color: #003ECB;
       }
 
       span {
-        color:whitesmoke;
+        color:#003ECB;
         font-weight: bold;
+        
       }
     }
   }
