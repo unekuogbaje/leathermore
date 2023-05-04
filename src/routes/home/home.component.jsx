@@ -27,7 +27,7 @@ const Home = () => {
     },
     {
       id: 5,
-      title: "Plants & Paintings",
+      title: "Paintings",
       imageUrl: "https://images.unsplash.com/photo-1569350080887-dd38c27caad0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
     },
   ]
