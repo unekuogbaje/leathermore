@@ -22,12 +22,12 @@ const Home = () => {
     },
     {
       id: 4,
-      title: "Beds & Mattresses",
+      title: "Beds & Bedframes",
       imageUrl: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
     },
     {
       id: 5,
-      title: "Plants & others",
+      title: "Plants & Paintings",
       imageUrl: "https://images.unsplash.com/photo-1569350080887-dd38c27caad0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
     },
   ]
