@@ -7,12 +7,12 @@ const Home = () => {
   const categories = [
     {
       id: 1,
-      title: "Lights and Chandlier",
+      title: "Lights",
       imageUrl: "https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
     },
     {
       id: 2,
-      title: "Chairs, Couches & Sofas",
+      title: "Chairs & Sofas",
       imageUrl: "https://images.unsplash.com/photo-1565330502541-4937be8552e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
     },
     {
@@ -22,7 +22,7 @@ const Home = () => {
     },
     {
       id: 4,
-      title: "Beds & Bedframes",
+      title: "Beds",
       imageUrl: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
     },
     {
