@@ -5,7 +5,7 @@ import CartIcon from '../../components/cart-icon/cart-icon';
 import CartDropdown from '../../components/cart-dropdown/cart-dropdown';
 import { UserContext } from '../../contexts/user.context';
 import { CartContext } from '../../contexts/cart.context';
-import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
+import { ReactComponent as LeatherMore } from '../../assets/logo.svg';
 import { signOutUser } from '../../utils/firebase/firebase.utils';
 
 import './navbar.styles.scss'
@@ -17,12 +17,12 @@ const NavBar = () => {
       <Fragment>
         <div className="navbar">
         <Link className='logo-container' to='/'>
-            <CrwnLogo className='logo'/>
+            <LeatherMore className='logo'/>
         </Link>
         
           <div className='nav-links-container'>
             <Link className='nav-link' to='/shop'>
-               SHOP FASHION
+               SHOP
             </Link>
             
             {currentUser ? (

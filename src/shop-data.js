@@ -1,6 +1,6 @@
 const SHOP_DATA = [
   {
-    title: 'Hats',
+    title: 'Lights and Chandlier',
     items: [
       {
         id: 1,
@@ -59,7 +59,7 @@ const SHOP_DATA = [
     ],
   },
   {
-    title: 'Sneakers',
+    title: 'Chairs, Couches & Sofas',
     items: [
       {
         id: 10,
@@ -113,7 +113,7 @@ const SHOP_DATA = [
   },
   {
     id: 3,
-    title: 'Jackets',
+    title: 'Shelves & Tables',
     items: [
       {
         id: 18,
@@ -149,7 +149,7 @@ const SHOP_DATA = [
   },
   {
     id: 4,
-    title: 'Womens',
+    title: 'Beds & Mattresses',
     items: [
       {
         id: 23,
@@ -197,7 +197,7 @@ const SHOP_DATA = [
   },
   {
     id: 5,
-    title: 'Mens',
+    title: 'Plants & others',
     items: [
       {
         id: 30,
